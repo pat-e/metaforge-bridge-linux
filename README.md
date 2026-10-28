@@ -101,9 +101,9 @@ Categories=Utility;
 Register the handler:
 ```bash
 update-desktop-database ~/.local/share/applications
-xdg-mime default metaforge-bridge.desktop x-scheme-handler/metaforge
+gio mime x-scheme-handler/metaforge metaforge-bridge.desktop
 # check:
-xdg-mime query default x-scheme-handler/metaforge     # -> metaforge-bridge.desktop
+gio mime x-scheme-handler/metaforge     # -> metaforge-bridge.desktop
 ```
 
 ### 3. Link your account
